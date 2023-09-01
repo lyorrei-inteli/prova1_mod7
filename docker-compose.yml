@@ -1,0 +1,16 @@
+version: '3'
+
+services:
+  backend:
+    build: $PWD/backend
+    restart: always
+    ports:
+      - "8000:8000"
+
+  frontend:
+    build: $PWD/frontend
+    restart: always
+    ports:
+      - "3000:3000"
+    depends_on:
+      - backend
