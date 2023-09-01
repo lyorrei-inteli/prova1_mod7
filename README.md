@@ -4,14 +4,14 @@ O projeto consiste em um CRUD de usuários.
 
 ## 📂 Estrutura de Pastas
 
-O projeto está dividido em duas partes principais: o backend e o frontend. Abaixo está uma visão geral da organização e estrutura das pastas do projeto:
+O projeto está dividido em duas partes principais: o backend e o frontend. Abaixo está uma visão geral da organização e estrutura das pastas:
 
 ```
 📦 Project
  ┣ 📂 backend               # Pasta raiz do backend 
  ┃ ┗ 📜 main.py             # Ponto de entrada da api 
  ┃ ┗ 📜 Dockerfile          # Arquivo docker com instruções para construir o container do backend
- ┣ 📂 frontend              # Pasta raiz do frontend (Next.js)
+ ┣ 📂 frontend              # Pasta raiz do frontend 
  ┃ ┗ 📜 index.html          # Arquivo frontend
  ┃ ┗ 📜 Dockerfile          # Arquivo docker com instruções para construir o container do frontend
  ┗ 📜 README.md             # Descrição e documentação do projeto
@@ -103,7 +103,7 @@ CMD ["node", "server.js"]
 
 #### Docker compose
 ```
-# Estabelece que a queremos utilizar a versão 3 do docker
+# Estabelece que queremos utilizar a versão 3 do docker
 version: '3'
 
 # Serviços da nossa aplicação (backend e frontend)
